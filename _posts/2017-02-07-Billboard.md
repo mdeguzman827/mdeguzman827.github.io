@@ -11,27 +11,29 @@ What makes a song that the public will love? From genre to length of song, there
 
 **The Data**
 
-The data had problems due to the miscategorization of some songs. Madonna was listed as a Rock genre, along with a few others. The year these songs were relevant were only 1999 and 2000, so it is likely that public preference has changed due to time. A vast majority of the songs were Rock songs as well, which could skew the results toward favoring Rock genre.
+The data had problems due to the miscategorization of some songs. Madonna was listed as a Rock genre, along with a few others. The year these songs were relevant were only 2000, so it is likely that public preference has changed due to time. A vast majority of the songs were Rock songs as well, which could skew the results toward favoring Rock genre.
 
 **Reading the Data**
 
-Here is a display of the data header. The maximum length on the chart is 76 weeks.
+We use pandas to read our data in. Here is a display of the data header. The data contains: year, artist, track, genre, date entered, peak date, length of song, rank, and weeks the song was on the chart.
 
 ![_config.yml]({{ site.baseurl }}/images/Screen Shot 2017-02-08 at 12.05.58 AM.png)
 
-I chose to select specifically for successful songs (lasted longer than 30 weeks). Here is a graph of those songs:
+I chose to select specifically for successful songs (lasted longer than 30 weeks). I chose 30 weeks because the mean was about 17 weeks with a standard deviation of 9 weeks. Songs that lasted longer than 30 weeks was 1.5 standard deviations away from the mean, which is better than about 90% of the songs. I would have used 2 standard deviations, but due to limited data, I chose a lower threshold for successful songs. Here is a graph of those songs:
 
 ![_config.yml]({{ site.baseurl }}/images/songs.png)
 
 As you can see, most of the successful songs had slower growth. In fact, it took an average of 138 days for a successful song to reach its peak. This shows that slower growth is better if you are trying to prolong the length of time the song is on the chart. It is also notable to see that songs dropped off the chart once it went below rank 50.
 
-Now let's look at the release date of successful songs:
+Now let's look at the date entered of successful songs:
 
 ![_config.yml]({{ site.baseurl }}/images/months.png)
 
-Most of the songs the lasted longer were released in the middle of Q1/Q2 of the year. That is just before summmer. This is significant because it shows that people enjoy listening to the same song as it prolongs as a summer hit. Specifically, Rock songs did very well when released during this time period. It had a succeess rate of 17.65%.
+Most of the songs that lasted longer entered in the middle of Q1/Q2 of the year. That is just before summmer. This is significant because it shows that people enjoy listening to the same song as a summer hit. We are all familiar of radios replaying the same song over and over during the summer months. Specifically, Rock songs did very well when entered during this time period. It had a succeess rate of 17.65%.
 
 **Conclusion**
 
-We can see that release date and genre contribute to the success and length of time a song is on the Billboard Hot 100. I would recommend record labels to release Rock albums just before summer to maximize popularity.
+There are a few risks and assumptions I had to make while exploring the data. The data seemed to be biased towards Rock songs, while there were few Reggae or Jazz songs on the chart. It would have been interesting to see how the data would have progressed if each genre was represented equally. Also, many songs mysteriously dropped off the chart exactly after 19 weeks. This could mean the data or source was biased in the subjective ranking. It could also mean Billboard automatically drops some songs immediately after 19 weeks or when their rank drops below 50.
+
+Although there are risks and assumptions, we can see that date entered and genre contribute to the success and length of time a song is on the Billboard Hot 100. I would recommend record labels to release Rock albums just before summer to maximize popularity.
 
