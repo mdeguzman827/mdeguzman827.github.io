@@ -1,9 +1,11 @@
 ---
 layout: post
-title: You're up and running!
+title: Billboard Hot 100
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+Introduction
+
+The dataset we are going to explore is the Billboard's Top 100, a list of the most popular songs in America. 
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
