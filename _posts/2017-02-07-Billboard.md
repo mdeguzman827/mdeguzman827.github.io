@@ -21,7 +21,7 @@ We use pandas to read our data in. Here is a display of the data header. The dat
 
 The graph below shows each song's rank as a function of time. There is a mysterious drop off for many songs after 19 weeks. This could be because the company forcibly takes the song off the chart if it is beloow rank 50 to open up slots for new songs.
 
-![_config.yml]({{ site.baseurl }}/stringy.png)
+![_config.yml]({{ site.baseurl }}/images/stringy.png)
 
 Since we are measuring success by the length of time it is on the chart, lets get a histogram of every song's timespan that it lasted for in weeks. Below, many songs landed on the left side of the curve, suggesting this is a positive skewed graph as the mean is greater than the median. The mean was about 17 weeks and 
 
