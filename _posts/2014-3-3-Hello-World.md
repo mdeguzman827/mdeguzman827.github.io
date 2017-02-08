@@ -29,11 +29,9 @@ Now let's look at the release date of successful songs:
 
 ![_config.yml]({{ site.baseurl }}/images/months.png)
 
-Most of the songs the lasted longer were released int the middle of Q1/Q2 of the year. That is just before summmer. This is significant because it shows that people enjoy listening to the same song as it prolongs as a summer hit. Specifically, Rock songs did very well when released during this time period. It had a succeess rate of 17.65%.
+Most of the songs the lasted longer were released in the middle of Q1/Q2 of the year. That is just before summmer. This is significant because it shows that people enjoy listening to the same song as it prolongs as a summer hit. Specifically, Rock songs did very well when released during this time period. It had a succeess rate of 17.65%.
 
 **Conclusion**
 
 We can see that release date and genre contribute to the success and length of time a song is on the Billboard Hot 100. I would recommend record labels to release Rock albums just before summer to maximize popularity.
 
-
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
