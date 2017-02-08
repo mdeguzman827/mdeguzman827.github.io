@@ -43,4 +43,4 @@ Most of the songs that lasted longer entered in the middle of Q1/Q2 of the year.
 There are a few risks and assumptions I had to make while exploring the data. The data seemed to be biased towards Rock songs, while there were few Reggae or Jazz songs on the chart. It would have been interesting to see how the data would have progressed if each genre was represented equally. Also, many songs mysteriously dropped off the chart exactly after 19 weeks. This could mean the data or source was biased in the subjective ranking. It could also mean Billboard automatically drops some songs immediately after 19 weeks or when their rank drops below 50.
 
 Although there are risks and assumptions, we can see that date entered and genre contribute to the success and length of time a song is on the Billboard Hot 100. I would recommend record labels to release Rock albums just before summer to maximize popularity.
-
+ 
