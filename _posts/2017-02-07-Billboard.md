@@ -19,18 +19,17 @@ We use pandas to read our data in. Here is a display of the data header. The dat
 
 ![_config.yml]({{ site.baseurl }}/images/Screen Shot 2017-02-08 at 12.05.58 AM.png)
 
-The graph below shows each song's rank as a function of time. There is a mysterious drop off for many songs after 19 weeks. This could be because the company forcibly takes the song off the chart if it is beloow rank 50 to open up slots for new songs.
+Since we are measuring success by the length of time it is on the chart, lets get a histogram of every song's timespan that it lasted for in weeks. The graph below depicts each song's rank as a function of time. There is a mysterious drop off for many songs after 19 weeks. This could be because the company forcibly takes the song off the chart if it stays lowly ranked in order to open up slots for new songs. It is also notable to see that songs mysteriously dropped off the chart once it went below rank 50. 
 
 ![_config.yml]({{ site.baseurl }}/images/stringy.png)
 
-Since we are measuring success by the length of time it is on the chart, lets get a histogram of every song's timespan that it lasted for in weeks. Below, many songs landed on the left side of the curve, suggesting this is a positive skewed graph as the mean is greater than the median. The mean was about 17 weeks and 
+Below, many songs landed on the left side of the curve, suggesting this is a positive skewed graph. However, I calculated the mean to be 16.7 and the median to be 18, which is contradictory since mean should be greater than median in a positive skewed graph. This could be due to the exaggeration of songs lasting exactly 19 weeks, which could cause the median to shift to the right.
 
-
-I chose to select specifically for successful songs (lasted longer than 30 weeks). I chose 30 weeks because the mean was about 17 weeks with a standard deviation of 9 weeks. Songs that lasted longer than 30 weeks was 1.5 standard deviations away from the mean, which is better than about 90% of the songs. I would have used 2 standard deviations, but due to limited data, I chose a lower threshold for successful songs. Here is a graph of those songs:
+I chose to select specifically for successful songs (lasted longer than 30 weeks). I chose 30 weeks because the standard deviation was about 9 weeks. Songs that lasted longer than 30 weeks are about 1.5 standard deviations away from the mean, which is better than about 85% of the songs. I would have used 2 standard deviations, but due to limited data, I chose a lower threshold for successful songs. Here is a graph of those songs:
 
 ![_config.yml]({{ site.baseurl }}/images/songs.png)
 
-As you can see, most of the successful songs had slower growth. In fact, it took an average of 138 days for a successful song to reach its peak. This shows that slower growth is better if you are trying to prolong the length of time the song is on the chart. It is also notable to see that songs dropped off the chart once it went below rank 50.
+As you can see, most of the successful songs had slower growth. In fact, it took an average of 138 days for a successful song to reach its peak. This shows that slower growth is better if you are trying to prolong the length of time the song is on the chart.
 
 Now let's look at the date entered of successful songs:
 
