@@ -21,12 +21,13 @@ Here is a display of the data header. The maximum length on the chart is 76 week
 
 I chose to select specifically for successful songs (lasted longer than 30 weeks). Here is a graph of those songs:
 
-
+![_config.yml]({{ site.baseurl }}/images/songs.png)
 
 As you can see, most of the successful songs had slower growth. In fact, it took an average of 138 days for a successful song to reach its peak. This shows that slower growth is better if you are trying to prolong the length of time the song is on the chart. It is also notable to see that songs dropped off the chart once it went below rank 50.
 
 Now let's look at the release date of successful songs:
 
+![_config.yml]({{ site.baseurl }}/images/months.png)
 
 Most of the songs the lasted longer were released int the middle of Q1/Q2 of the year. That is just before summmer. This is significant because it shows that people enjoy listening to the same song as it prolongs as a summer hit. Specifically, Rock songs did very well when released during this time period. It had a succeess rate of 17.65%.
 
