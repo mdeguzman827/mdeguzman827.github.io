@@ -14,6 +14,11 @@ In addition to getting all the data and creating a model, I decided to see if th
 
 ![_config.yml]({{ site.baseurl }}/images/wordlength.png)
 
+![_config.yml]({{ site.baseurl }}/images/ratings.png)
+
+![_config.yml]({{ site.baseurl }}/images/revs.png)
+
+
 As you can see, there is no relationship between average word length and salaries. In fact, salary tended to decrease as the word lengths increased. I assume that maybe some jobs try to use bigger words to make the job seem a bit more important even though it has a smaller salary. I must reject my hypothesis.
 
 ## The Model ##
