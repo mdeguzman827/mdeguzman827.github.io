@@ -2,7 +2,7 @@
 layout: post
 title: Estimating Data Scientist Salaries
 --- 
-Finding the optimum salary in which both employee and company can agree on is a necessity in any job market. We will apply our knowledge of web scraping and logistic regression to come up with a model that that correctly predict what a data scientist's salary should be based on the job results of Indeed.com.  
+Finding the optimum salary in which both employee and company can agree on is a necessity in any job market. We will apply our knowledge of web scraping and logistic regression to come up with a model that correctly predicts what a data scientist's salary should be based on the job results of Indeed.com.  
 
 ## The Data ##
 
@@ -18,7 +18,7 @@ As you can see, there is no relationship between average word length and salarie
 
 ![_config.yml]({{ site.baseurl }}/images/ratings.png)
 
-The graph above also shows no relationship between salary and ratings. However, lower salaries did not get high ratings.
+The graph above also shows no relationship between salary and ratings. However, very low ratings equated to lower salaries.
 
 ![_config.yml]({{ site.baseurl }}/images/revs.png)
 
