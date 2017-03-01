@@ -12,8 +12,8 @@ I webscraped 50,000 pages of Indeed to find job results that provide location, r
 
 In addition to getting all the data and creating a model, I decided to see if there was any significance to average word length in the description. My hypothesis was that jobs with bigger words equated with bigger salaries. I found the average word length and plotted it to get this graph:
 
-![_config.yml]({{ site.baseurl }}/images/sal_ranges.png)
- 
+![_config.yml]({{ site.baseurl }}/images/wordlength.png)
+
 As you can see, there is no relationship between average word length and salaries. In fact, salary tended to decrease as the word lengths increased. I assume that maybe some jobs try to use bigger words to make the job seem a bit more important even though it has a smaller salary. I must reject my hypothesis.
 
 ## The Model ##
@@ -26,7 +26,9 @@ Now let's go over the confusion matrix:
 
 ![_config.yml]({{ site.baseurl }}/images/confusion.png)
 
-I found my accuracy, precision, recall and F1 scores to be quite terrible due to the lack of data to train on. The model tended to overpredict the $0 - $50,000 salaries with values between $50,000 - $100,000. This is a very bad idea since it discourage employees that thought they were getting a bigger salary. 
+I found my accuracy, precision, recall and F1 scores to be quite terrible due to the lack of data to train on. The accuracy was about 52%, precision at 50%, recall at 52%, and F1 at 48%. This means that we have roughly a 50:50 chance of predicting the correct salary, which is about the same as a coin toss. The reason these values are really bad is due to the limited data and concentration of most data points in the 50-100k range. Thus, the model couldn't train much on other salary ranges.
+The model also tended to overpredict the $0 - $50,000 salaries with values between $50,000 - $100,000. This is a very bad idea since it discourages employees that thought they were getting a bigger salary. 
+
 
 ## Conclusion ## 
 
