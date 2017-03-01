@@ -28,6 +28,6 @@ Now let's go over the confusion matrix:
 
 I found my accuracy, precision, recall and F1 scores to be quite terrible due to the lack of data to train on. The model tended to overpredict the $0 - $50,000 salaries with values between $50,000 - $100,000. This is a very bad idea since it discourage employees that thought they were getting a bigger salary. 
 
-## Conclusion ##
+## Conclusion ## 
 
 So in conclusion, we should judge the salaries based on the title and location of the jobs. Jobs with "research" in the title should get paid lower pay (around $50,000) and jobs with "data" in the title should get paid more (around $100,000). As for location, jobs in Delaware, New Mexico, and Massachusetts will pay very well.
