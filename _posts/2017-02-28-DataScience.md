@@ -12,6 +12,7 @@ I webscraped 50,000 pages of Indeed to find job results that provide location, r
 
 In addition to getting all the data and creating a model, I decided to see if there was any significance to average word length in the description. My hypothesis was that jobs with bigger words equated with bigger salaries. I found the average word length and plotted it to get this graph:
 
+![_config.yml]({{ site.baseurl }}/images/sal_ranges.png)
  
 As you can see, there is no relationship between average word length and salaries. In fact, salary tended to decrease as the word lengths increased. I assume that maybe some jobs try to use bigger words to make the job seem a bit more important even though it has a smaller salary. I must reject my hypothesis.
 
@@ -21,6 +22,11 @@ We are using logistic regression to predict salaries. This may seem counterintui
 
 I also wanted to find the average salaries of data scientist jobs in each state. I found the best states with top salaries to be Delaware, New Mexico, and Massachusetts. However, it is very important to note that I was only able to scrape very few jobs for each state (less than 10). So this data is hardly representative of an entire to state, let alone the country.
 
+Now let's go over the confusion matrix:
+
+![_config.yml]({{ site.baseurl }}/images/confusion.png)
+
+I found my accuracy, precision, recall and F1 scores to be quite terrible due to the lack of data to train on. The model tended to overpredict the $0 - $50,000 salaries with values between $50,000 - $100,000. This is a very bad idea since it discourage employees that thought they were getting a bigger salary. 
 
 ## Conclusion ##
 
