@@ -46,6 +46,4 @@ The model also tended to overpredict the $0 - $50,000 salaries with values betwe
 
 So in conclusion, we should judge the salaries based on the title and location of the jobs. Jobs with "research" in the title should get paid lower pay (around $50,000) and jobs with "data" in the title should get paid more (around $100,000). As for location, jobs in Delaware, New Mexico, and Massachusetts will pay very well.
 
-
-
 Please check out the original code in my jupyter notebook [here](https://git.generalassemb.ly/mdeguzman827/webscraping-lab/blob/master/scraping-project-4-starter.ipynb)
