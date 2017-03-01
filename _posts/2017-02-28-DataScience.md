@@ -28,7 +28,7 @@ The graph above shows that the number of reviews also did not affect salary.
 
 We are using logistic regression to predict salaries. This may seem counterintuitive since salaries are a continuous value. However, it is much more useful to give ranges of salaries in order to make room for negotiation and possibly other factors that affect salary. We built the model and found the features that affect the salaries the most. In my case, it was the words "data" and "research" that had the most effects. If "data" was in the job title, then it came with quite a big average salary of $117,000. However, if "research" was in the job title, then the average salary was roughly $ 56,000. This makes sense because most research jobs get paid very little. Neither reviews nor job description had any particular impact on salary.
 
-I also wanted to find the average salaries of data scientist jobs in each state. I found the best states with top salaries to be Delaware, New Mexico, and Massachusetts. However, it is very important to note that I was only able to scrape very few jobs for each state (less than 10). So this data is hardly representative of an entire to state, let alone the country.
+I also wanted to find the average salaries of data scientist jobs in each state. I found the best states with top salaries to be Delaware, New Mexico, California and Massachusetts. However, it is very important to note that I was only able to scrape very few jobs for each state (less than 10). So this data is hardly representative of an entire to state, let alone the country.
 
 Now let's go over the confusion matrix:
 
@@ -44,6 +44,9 @@ The model also tended to overpredict the $0 - $50,000 salaries with values betwe
 
 ## Conclusion ## 
 
-So in conclusion, we should judge the salaries based on the title and location of the jobs. Jobs with "research" in the title should get paid lower pay (around $50,000) and jobs with "data" in the title should get paid more (around $100,000). As for location, jobs in Delaware, New Mexico, and Massachusetts will pay very well.
+So in conclusion, we should judge the salaries based on the title and location of the jobs. Jobs with "research" in the title should get paid lower pay (around $50,000) and jobs with "data" in the title should get paid more (around $100,000). As for location, jobs in Delaware, New Mexico, California and Massachusetts will pay very well. Here's a map to show data science salaries across the United States:
+
+![_config.yml]({{ site.baseurl }}/images/US.png)
+
 
 Please check out the original code in my jupyter notebook [here](https://git.generalassemb.ly/mdeguzman827/webscraping-lab/blob/master/scraping-project-4-starter.ipynb)
