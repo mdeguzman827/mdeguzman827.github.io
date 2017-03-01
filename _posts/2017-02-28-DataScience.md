@@ -14,16 +14,19 @@ In addition to getting all the data and creating a model, I decided to see if th
 
 ![_config.yml]({{ site.baseurl }}/images/wordlength.png)
 
+As you can see, there is no relationship between average word length and salaries. In fact, salary tended to decrease as the word lengths increased. I assume that maybe some jobs try to use bigger words to make the job seem a bit more important even though it has a smaller salary. I must reject my hypothesis.
+
 ![_config.yml]({{ site.baseurl }}/images/ratings.png)
+
+The graph above also shows no relationship between salary and ratings. However, lower salaries did not get high ratings.
 
 ![_config.yml]({{ site.baseurl }}/images/revs.png)
 
-
-As you can see, there is no relationship between average word length and salaries. In fact, salary tended to decrease as the word lengths increased. I assume that maybe some jobs try to use bigger words to make the job seem a bit more important even though it has a smaller salary. I must reject my hypothesis.
+The graph above shows that the number of reviews also did not affect salary.
 
 ## The Model ##
 
-We are using logistic regression to predict salaries. This may seem counterintuitive since salaries are a continuous value. However, it is much more useful to give ranges of salaries in order to make room for negotiation and possibly other factors that affect salary. We built that model and found the features that affect the salaries the most. In my case, it was the word "data" and "research" that had the most effects. If "data" was in the job title, then it came with quite a big average salary of $117,000. However, if "research" was in the job title, then the average salary was roughly $ 56,000. This makes sense because most research jobs get paid very little. Neither reviews nor job description had any particular impact on salary.
+We are using logistic regression to predict salaries. This may seem counterintuitive since salaries are a continuous value. However, it is much more useful to give ranges of salaries in order to make room for negotiation and possibly other factors that affect salary. We built the model and found the features that affect the salaries the most. In my case, it was the words "data" and "research" that had the most effects. If "data" was in the job title, then it came with quite a big average salary of $117,000. However, if "research" was in the job title, then the average salary was roughly $ 56,000. This makes sense because most research jobs get paid very little. Neither reviews nor job description had any particular impact on salary.
 
 I also wanted to find the average salaries of data scientist jobs in each state. I found the best states with top salaries to be Delaware, New Mexico, and Massachusetts. However, it is very important to note that I was only able to scrape very few jobs for each state (less than 10). So this data is hardly representative of an entire to state, let alone the country.
 
@@ -31,7 +34,11 @@ Now let's go over the confusion matrix:
 
 ![_config.yml]({{ site.baseurl }}/images/confusion.png)
 
-I found my accuracy, precision, recall and F1 scores to be quite terrible due to the lack of data to train on. The accuracy was about 52%, precision at 50%, recall at 52%, and F1 at 48%. This means that we have roughly a 50:50 chance of predicting the correct salary, which is about the same as a coin toss. The reason these values are really bad is due to the limited data and concentration of most data points in the 50-100k range. Thus, the model couldn't train much on other salary ranges.
+I found my accuracy, precision, recall and F1 scores to be quite terrible due to the lack of data to train on. The accuracy was about 52%, precision at 50%, recall at 52%, and F1 at 48%. This means that we have roughly a 50:50 chance of predicting the correct salary, which is about the same as a coin toss. There was also a high concentration of data points in the 50k-100k range as shown below:
+
+![_config.yml]({{ site.baseurl }}/images/sal_ranges.png)
+
+Thus, the model couldn't train much on other salary ranges.
 The model also tended to overpredict the $0 - $50,000 salaries with values between $50,000 - $100,000. This is a very bad idea since it discourages employees that thought they were getting a bigger salary. 
 
 
