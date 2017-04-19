@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hey! I'm Dex, a machine learning enthusiast that codes primarily in Python.
 
-### More Information
+### The Blog
 
-A place to include any other types of information that you'd like to include about yourself.
+This blog contains projects that I work on using the power of machine learning. The projects have a wide array of topics, so click on one that interests you! :)
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[email@domain.com](mailto:mdeguzman827@gmail.com)
