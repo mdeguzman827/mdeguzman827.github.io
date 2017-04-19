@@ -12,4 +12,4 @@ This blog contains projects that I work on using the power of machine learning. 
 
 ### Contact me
 
-[email@domain.com](mailto:mdeguzman827@gmail.com)
+[mdeguzman827@gmail.com](mailto:mdeguzman827@gmail.com)
