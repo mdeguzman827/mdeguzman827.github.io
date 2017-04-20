@@ -3,34 +3,6 @@ layout: default
 ---
 
 
-<div class="posts">
-  {% for post in site.posts %}
-  <div>
-    <article class="post">
-       
-      <h1><a href="{{sit.baseurl}}{{post.url }}">{{post.title}}</a></h1>
-
-      <div class="entry">
-        <p style="float: right;"><img src="http://placekitten.com/g/200/200" height=auto width=auto border="1px" border-radius="5px"></p>
-        {{ post.excerpt }}
-      </div>
-      
-      <a href="{{ site.baseurl}}{{ post.url }}" class="read-more">Read More</a>
-  </article>
-  </div>
- {% endfor %}
-</div>
-
-<!-- <div>
-    <p style="float: left;"><img src="http://placekitten.com/g/200/200" height="200px" width="200px" border="1px"></p>
-    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
-</div>
-<div style="clear: left;">
-    <p style="float: left;"><img src="http://placekitten.com/g/200/200" height="200" width="200" border="1px"></p>
-    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
-</div>
-
-
 
 <div class="posts">
   {% for post in site.posts %}
@@ -46,5 +18,3 @@ layout: default
     </article>
   {% endfor %}
 </div>
- -->
- -->
