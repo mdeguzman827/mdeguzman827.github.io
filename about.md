@@ -3,6 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
+avatar: https://avatars2.githubusercontent.com/u/10346948?v=3&s=460
 
 Hey! I'm Dex, a machine learning enthusiast that codes primarily in Python.
 
