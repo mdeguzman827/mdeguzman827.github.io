@@ -6,11 +6,10 @@ layout: default
 <div class="posts">
   {% for post in site.posts %}
   <div>
-    <p style="float: left;"><img src="http://placekitten.com/g/200/200" height="200px" width="200px" border="1px"></p>
     <article class="post">
       
       <h1><a href="{{sit.baseurl}}{{post.url }}">{{post.title}}</a></h1>
-      
+      <p style="float: left;"><img src="http://placekitten.com/g/200/200" height="200px" width="200px" border="1px"></p>
       <div class="entry">
         {{ post.excerpt }}
       </div>
