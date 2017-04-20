@@ -2,6 +2,33 @@
 layout: default
 ---
 
+
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">
+      
+      <h1><a href="{{sit.baseurl}}{{post.url }}">{{post.title}}</a></h1>
+      
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+      
+      <a href="{{ site.baseurl}}{{ post.url }}" class="read-more">Read More</a>
+  </article>
+ {% endfor %}
+</div>
+
+<!-- <div>
+    <p style="float: left;"><img src="http://placekitten.com/g/200/200" height="200px" width="200px" border="1px"></p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+</div>
+<div style="clear: left;">
+    <p style="float: left;"><img src="http://placekitten.com/g/200/200" height="200" width="200" border="1px"></p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+</div>
+
+
+
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">
@@ -16,3 +43,4 @@ layout: default
     </article>
   {% endfor %}
 </div>
+ -->
