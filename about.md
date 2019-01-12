@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Hey! I'm Marvin, a data science enthusiast that codes primarily in Python. As an undergraduate, I studied Neuroscience and was premed. However, I was captivated by the capabilities of machine learning and decided to leave medical school in order to pursue a career in business/technology. Following college, I studied Mathematics at Columbia University and Data Science at General Assembly. I aim to automate and optimize multiple business practices by providing data-driven insights into business operations.
+Hey! I'm Marvin, a data science enthusiast that codes primarily in Python. I studied Mathematics at Columbia University and Data Science at General Assembly. I aim to automate and optimize multiple business practices by providing data-driven insights into business operations.
 
 ### The Blog
 
